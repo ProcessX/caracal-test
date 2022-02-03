@@ -2,6 +2,8 @@ import { extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
 import Button from './Button';
+import Headings from './Components/Headings';
+import colors from './Lib/colors'
 
 // ? https://chakra-ui.com/docs/theming/theme#typography
 const fonts = {};
@@ -15,8 +17,6 @@ breakpoints.lg = '992px';
 breakpoints.xl = '1200px';
 breakpoints.xxl = '1440px';
 
-// ? https://chakra-ui.com/docs/theming/theme#colors
-const colors = {};
 
 // ? https://chakra-ui.com/docs/theming/theme#spacing
 const space = {};
@@ -45,6 +45,9 @@ const theme = extendTheme({
 	},
 	components: {
 		Button,
+		Headings,
+		Text: {
+		}
 	},
 });
 

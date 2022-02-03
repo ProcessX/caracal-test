@@ -4,7 +4,8 @@
 
 const Button = {
 	// The styles all button have in common
-	baseStyle: {},
+	baseStyle: {
+	},
 
 	// The sizes, for example `sm` and `md`
 	sizes: {},

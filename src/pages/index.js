@@ -2,17 +2,15 @@ import { Heading, Image } from '@chakra-ui/react';
 
 import Container from '_comps/Layout/Container';
 import Col from '_comps/Layout/Col';
+import React from 'react';
+import SectionIntro from '_comps/Layout/Sections/Home/SectionIntro';
+import SectionFeatures from '_comps/Layout/Sections/Home/Features/SectionFeatures';
 
 const Home = () => (
-	<Container h="100vh" alignItems="center">
-		<Col colStart={2} colEnd={26} textAlign="center">
-			<Heading as="h1" fontSize="6xl">
-				Hello world
-			</Heading>
-
-			<Image src="/logo_caracal-studio.svg" alt="Caracal Studio’s logo" maxWidth="200" my={8} d="inline" />
-		</Col>
-	</Container>
+	<React.Fragment>
+		<SectionIntro />
+		<SectionFeatures />
+	</React.Fragment>
 );
 
 export default Home;
